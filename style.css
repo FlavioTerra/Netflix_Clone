@@ -8,6 +8,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background: var(--black);
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+}
+
+
 /*
     --------------- Variables ---------------
 */
@@ -18,19 +25,18 @@
 }
 
 /*
-    --------------- Header ---------------
+    --------------- Header and Nav ---------------
 */
 
-body {
-    background: var(--black);
-    font-family: 'Times New Roman', Times, serif;
+header {
+    margin: 20px 30px 10px 30px;
 }
 
 header .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 25px 0 25px;
+    flex-wrap: wrap;
 }
 
 header .logo img{
@@ -43,14 +49,80 @@ header nav ul {
 
 header nav ul li {
     display: inline;
-    margin-right: 15px;
+    margin-right: 25px;
 }
 
 header nav li a {
     text-decoration: none;
     color: #aaa;
+    font-weight: 501;
+    font-size: 15px;
+    transition: 0.3s all;
 }
 
 header nav li a:hover {
     color: #fff;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fff;
+}
+
+/*
+    --------------- Main ---------------
+*/
+
+main .filme-principal .container {
+    margin: 0 30px;
+    width: 70%;
+    
+}
+
+.filme-principal {
+    font-size: 18px;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(./img/capa-principal.jpg);
+    background-size: cover;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao {
+    margin: 15px 0 40px 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: justify;
+}
+
+.titulo {
+    font-size: 40px;
+}
+
+/*
+    --------------- Buttons ---------------
+*/
+
+.btn {
+    background: #e50914;
+    padding: 11px 20px;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 0.9em;
+    margin: 0 15px;
+    transition: .3s ease all;
+}
+
+.btn:hover {
+    background: #e50914dc;
+    cursor: pointer;
+}
+
+.btn i {
+    font-size: 0.8em;
+    margin-right: 5px;
+}
+
+.btn-all {
+    display: flex;
+    justify-content: center;
 }
