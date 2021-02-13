@@ -73,18 +73,18 @@ header nav li a:hover {
 main .filme-principal .container {
     margin: 0 30px;
     width: 70%;
-    
 }
 
 .filme-principal {
     font-size: 18px;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../img/capa-principal.jpg);
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .4)), url(../img/capa-principal.jpg);
+    height: 650px;
     background-size: cover;
-    height: 800px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    background-position: center;
 }
 
 .filme-principal .descricao {
@@ -108,7 +108,7 @@ main .filme-principal .container {
     color: #fff;
     border-radius: 3px;
     font-size: 0.9em;
-    margin: 0 15px;
+    margin: 0 15px 10px;
     transition: .3s ease all;
 }
 
@@ -125,4 +125,31 @@ main .filme-principal .container {
 .btn-all {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+}
+
+@media (max-width: 767.98px) {
+    .btn {
+        font-size: 0.8em;
+    }
+
+    .titulo {
+        font-size: 30px;
+    }
+
+    .filme-principal {
+        font-size: 17px;
+    }
+
+    header nav li a {
+        font-size: 13px;
+    }
+
+    header nav ul li {
+        margin-right: 10px;
+    }
+
+    main .filme-principal .container {
+        width: 80%;
+    }
 }
