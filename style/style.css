@@ -78,7 +78,7 @@ main .filme-principal .container {
 
 .filme-principal {
     font-size: 18px;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url(./img/capa-principal.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(../img/capa-principal.jpg);
     background-size: cover;
     height: 800px;
     display: flex;
